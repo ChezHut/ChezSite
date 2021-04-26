@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Uptime</title>
+        <meta property="og:description" content="Uptime - ChezCoderTK">
+        <link href="/templates/global/css" rel="stylesheet">
+
+        <style>
+            html, body {
+                padding: 0px;
+                margin: 0px;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                background: #131a26;
+            }
+
+            .frame {
+                border: none;
+                margin: none;
+                padding: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+
+        <main>
+            <iframe src="https://stats.uptimerobot.com/17wNVfpm0P/787924599" class="frame"></iframe>
+        </main>
+
+        <footer></footer>
+
+        <script>
+            getWidth = (function() { return Math.max(document.body.scrollWidth, document.documentElement.scrollWidth, document.body.offsetWidth, document.documentElement.offsetWidth, document.documentElement.clientWidth) });
+            getHeight = (function() { return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.documentElement.clientHeight) - 40 });
+            
+            document.getElementsByClassName("frame")[0].height = getHeight() + "px";
+            document.getElementsByClassName("frame")[0].width = getWidth() + "px";
+        </script>
+        <script src="/templates/global/js"></script>
+        <script src="/templates/nav/js"></script>
+    </body>
+</html>
