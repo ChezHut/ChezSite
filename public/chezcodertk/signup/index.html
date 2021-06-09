@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Signup</title>
+        <link href="styles.css" rel="stylesheet">
+        <meta property="og:description" content="Sign up to ChezCoderTK">
+        <link href="/templates/global/css" rel="stylesheet">
+    </head>
+    <body>
+        <header></header>
+
+        <main>
+            <div class="center">
+                <div class="form-wrapper">
+                    <h1>Signup</h1>
+                    <span class="form-message" id="formMessage"></span>
+                    <input id="username" placeholder value="Username">
+                    <input id="password" placeholder value="Password">
+                    <input id="confpassword" placeholder value="Confirm Password">
+                    <div class="checkboxes">
+                        <div class="checkbox-section">
+                            <input id="tos" type="checkbox"> I agree to the terms and conditions of this site
+                        </div>
+                    </div>
+                    <button id="signup" disabled>Signup</button>
+
+                    <div id="socialOptions"></div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+        <script src="/templates/global/js"></script>
+        <script src="/templates/nav/js"></script>
+    </body>
+</html>

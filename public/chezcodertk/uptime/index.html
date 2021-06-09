@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Uptime</title>
+        <meta property="og:description" content="Uptime - ChezCoderTK">
+        <link href="/templates/global/css" rel="stylesheet">
+
+        <style>
+            * {
+                position: relative;
+            }
+
+            html, body {
+                padding: 0px;
+                margin: 0px;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                background: #131a26;
+            }
+
+            .frame {
+                border: none;
+                margin: none;
+                padding: none;
+                z-index: 0;
+            }
+
+            .loading-animation {
+                font-size: 50px;
+                color: white;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                top: calc(50% - 25px);
+                transition: color 0.2s;
+                z-index: 2;
+            }
+
+            .bigcircle {
+                border-radius: 100%;
+                background: dimgray;
+                z-index: 1
+                position: absolute;
+                top: calc(50% - 50px);
+                left: calc(50% - 50px);
+                width: 100px;
+                height: 100px;
+                transition: transform 2s, opacity 1s;
+                transform: scale(0);
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+
+        <span class="loading-animation">Loading</span>
+        <div class="bigcircle"></div>
+
+        <main>
+            <iframe src="https://stats.uptimerobot.com/17wNVfpm0P/787924599" class="frame"></iframe>
+        </main>
+
+        <footer></footer>
+
+        <script>
+            getWidth = (function() { return Math.max(document.body.scrollWidth, document.documentElement.scrollWidth, document.body.offsetWidth, document.documentElement.offsetWidth, document.documentElement.clientWidth) });
+            getHeight = (function() { return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.documentElement.clientHeight) - 40 });
+            
+            document.getElementsByClassName("frame")[0].height = getHeight() + "px";
+            document.getElementsByClassName("frame")[0].width = getWidth() + "px";
+
+            setInterval(function() {
+                if (document.getElementsByClassName("loading-animation")) {
+                    Array.from(document.getElementsByClassName("loading-animation")).forEach(function(el) {
+                        if (el.style.color == "white") {
+                            el.style.color = "lightgray";
+                        } else {
+                            el.style.color = "white";
+                        }
+                    });
+                }
+            }, 500);
+
+            document.getElementsByClassName("frame")[0].addEventListener("load", function() {
+                document.getElementsByClassName("loading-animation")[0].remove();
+                document.getElementsByClassName("bigcircle")[0].style.top = "calc(50% - 100px)";
+                document.getElementsByClassName("bigcircle")[0].style.opacity = 0;
+                document.getElementsByClassName("bigcircle")[0].style.transform = "scale(5)";
+
+                setTimeout(function() {
+                    document.getElementsByClassName("bigcircle")[0].remove();
+                }, 1000);
+            });
+        </script>
+        <script src="/templates/global/js"></script>
+        <script src="/templates/nav/js"></script>
+    </body>
+</html>

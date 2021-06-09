@@ -1,0 +1,82 @@
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background: deepskyblue;
+    height: 50px;
+    transform: translateY(-60px);
+    z-index: 10000;
+}
+
+nav .divider {
+    position: absolute;
+    color: white;
+    left: 50%;
+}
+
+nav .account-panel,
+nav .nav-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 30%;
+}
+
+nav .account-panel {
+    margin-right: 10%;
+}
+
+nav .nav-panel {
+    margin-left: 10%;
+}
+
+nav .account-panel a,
+nav .nav-panel a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: color 0.5s;
+}
+
+nav .account-panel a:hover,
+nav .nav-panel a:hover {
+    color: #f0f0f0;
+}
+
+nav .account-panel .pfp-container {
+    position: absolute;
+    right: 25px;
+    transition: filter 0.25s;
+}
+
+nav .account-panel .pfp-container:hover {
+    filter: brightness(0.75);
+}
+
+nav .account-panel .pfp-container > img,
+nav .nav-panel .pfp-container > img {
+    height: 35px;
+    border-radius: 100%;
+}
+
+.notice {
+    position: absolute;
+    align-items: center;
+    top: calc(50px - 16px - 10px);
+    padding: 5px;
+}
+
+.notice > span {
+    opacity: 0;
+    font-size: 13px;
+    color: white;
+    margin-left: 0px;
+    padding-left: 0px;
+    transition: opacity 0.2s;
+    cursor: p
+}
+
+.notice > img {
+    vertical-align: middle;
+    cursor: p
+}

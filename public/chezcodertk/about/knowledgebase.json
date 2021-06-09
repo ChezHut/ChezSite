@@ -1,0 +1,29 @@
+{
+    "Front-End": {
+        "JavaScript": ["JavaScript and Typescript must be one of my top languages. The structure and efficiency is just unbelieveable, and makes writing scripts and libraries very easy. When I am writing JavaScript, I tend to find the most vanilla ways to write them. My code doesn't really support Internet Explorer, because IE adds to much code, and you shouldn't be using it anyways.", 3],
+        "HTML": ["HTML is one of the most beautifully structured markup languages. The concept of enclosing content with matching tags is very mind blowing. A language that can look beautiful and store information at the same time is hard to find these days.", 3],
+        "CSS": ["Similar to JavaScript, I tend to write code that supports IE and webkit. It adds to much lines, and is very irritating. CSS has a very JSON-like structure, which makes it very easy to understand.", 3]
+    },
+    "Back-End": {
+        "NodeJS": ["NodeJS, probably one of the best back-end languages i've ever seen. An eval and asynchronous version of JavaScript, who could've thunk? The most common libraries I use on NodeJS are express (http server), fs (file system), and Discord.js (discord bots).", 3],
+        "Python": ["Python is probably one of the only non-bracket languages that I like. The simplicity of importing and exporting code makes it a very useful language, not to mention that Python is so lightweight you won't even realize it was programmed from Java.", 3],
+        "EJS": ["Templating langages aren't really considered back-end, but EJS has a wonderful ability of precompiling JavaScript, which is why it made it to the list. Not to mention the structure is so close to HTML, no extra knowledge is required.", 3],
+        "PHP": ["This language took me a while to understand and use. PHP was both a backend and a frontend. This got me real good when I started learning and using PHP.", 2]
+    },
+    "Programming": {
+        "Java": ["I never used to like Java. It was too complicated with all of it's classes and imports. But once I really got my hands dirty and learned how to create Minecraft Spigot Plugins & Fabric Minecraft Mods, it really hit me that Java was actually a really good language. Though some might disagree, i can see why they named JavaScript after this language.", 2],
+        "C++": ["C++ was my second choice after I learnt Python. I actually got a really big book on C++, but sadly i never understood C++. It had too much symbols, and pointers didn't help. C++ was probably the reason I prefer Java. But maybe i'll look back on C++ one day.", 1]
+    },
+    "Storage Methods": {
+        "JSON": ["Most likely the most genius storage method, JSON structure is flawless. It incorporates Objects in JavaScript, which makes it very simple to transfer data between applications. I can see why JSON files ignore CORS.", 3],
+        "YAML": ["I never knew this language existed until I started messing with Minecraft Spigot Plugins. But when I did, it was awesome. What was cooler, was that JSON was valid YAML, now isn't that just crazy?", 3],
+        "XML": ["I actually heard of this language while learning the XMLHttpRequest. The name of this method was very badly named, XML is a very bad storage method, it's basically HTML but you have to parse it. Why bother parsing the XML when you can put the styles right in an HTML file instead?", 2],
+        "SQL": ["To be honest, I still don't know how to use SQL. I've done tutorials so I know the basics of the language, but otherwise I don't know how to use it, where to use it, and why I would want to use it.", 1]
+    },
+    "Other": {
+        "Skript": ["A language developed for Minecraft Spigot server owners, this language tries to make writing as simple as possible, leaning on the structure of English. This was not an easy feat, and I congratulate the Skript team.", 3],
+        "Lua": ["Other than game development in ROBLOX, I can't think of another use for this language. It is horrifyingly similar to Python, doesn't have any more support than Python, and gives the crappiest error messages known to man.", 2],
+        "Bash Scripting": ["Bash is a beautiful language. It can be used in the command line, where simple scripts can be run, or it could be written in a file to run larger scripts. Bash is so similarly lightweight like NodeJS.", 2],
+        "React Native": ["I don't understand this language. React Native is a framework, so it technically is still JavaScript. I don't know if React Native has a tweaked binary of NodeJS, but I don't understand how the HTML tags in React Native are valid, and most likely never will.", 2]
+    }
+}

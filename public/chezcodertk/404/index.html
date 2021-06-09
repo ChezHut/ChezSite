@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <title>404 - Not Found</title>
+        <meta property="og:description" content="404 - Not Found">
+        <style>
+            * {
+                font-family: Arial;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            main > * {
+                display: block;
+            }
+
+            main > h1 {
+                font-size: 100px;
+                margin-bottom: 0px;
+                background: linear-gradient(to right, #009fff, #ec2f4b);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            main > span {
+                color: gray;
+                font-size: 20px;
+            }
+
+            .quotes { 
+                width: 350px;
+                margin-top: 100px;
+                text-align: center;
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+                padding: 10px;
+                background: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d);
+            }
+
+            .quotes > .quote {
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            .quotes > .author {
+                font-size: 15px;
+                display: inline;
+            }
+        </style>
+
+        <link href="/templates/global/css" rel="stylesheet">
+    </head>
+    <body>
+        <header></header>
+
+        <main>
+            <h1>404</h1>
+            <span>Page not found</span>
+            <div class="quotes">
+                <blockquote class="quote">...</blockquote>
+                <span class="author"></span>
+            </div>
+        </main>
+
+        <script>
+        let quote = document.getElementsByTagName("blockquote")[0];
+            let quoteauthor = document.getElementsByClassName("author")[0];
+            let quotexhr = new XMLHttpRequest();
+            quotexhr.open("get", "https://type.fit/api/quotes");
+            quotexhr.send();
+            quotexhr.addEventListener("readystatechange", function(e) {
+                if (e.target.status == 200 && e.target.readyState == 4) {
+                    let quotes = JSON.parse(e.target.responseText);
+                    let quoteData = quotes[Math.floor(Math.random() * quotes.length)];
+                    quote.textContent = "\"" + quoteData.text + "\"";
+                    quoteauthor.textContent = "- " + (quoteData.author || "Unknown")
+                }
+            });
+        </script>
+
+        <footer></footer>
+        <script src="/templates/global/js"></script>
+        <script src="/templates/nav/js"></script>
+    </body>
+</html>

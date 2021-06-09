@@ -1,0 +1,91 @@
+* {
+    position: relative;
+    z-index: 0;
+}
+
+.typist-welcome {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.loading-animation {
+    font-size: 30px;
+    width: 500px;
+    margin: auto;
+}
+
+#ariaLabel {
+    background: deepskyblue;
+    padding: 5px;
+    color: white;
+    margin: 2px;
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    opacity: 0;
+    z-index: 10000;
+    transition: opacity 0.1s;
+}
+
+#typist {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 70px;
+}
+
+.knowledgebase-section {
+    margin: 30px;
+    border: 4px black double;
+    box-shadow: 5px 5px 0px darkgray;
+    /* opacity: 0; */
+    transition: opacity 0.5s;
+}
+
+.knowledgebase-section .section-name {
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    background: skyblue;
+    color: white;
+    font-weight: bold;
+}
+
+.knowledgebase-section .lang-names {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background: #326F91;
+    user-select: none;
+}
+
+.knowledgebase-section .lang-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background: #D4F1F2;
+    color: blue;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.knowledgebase-section .lang-card {
+    height: 0px;
+    transition: height 1s cubic-bezier(.5,1,.5,1),
+                padding 1s cubic-bezier(.5,1,.5,1);
+    display: block;
+    text-indent: 30px;
+    text-align: justify;
+    overflow-y: scroll;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.knowledgebase-section .lang-name:hover {
+    transform: scale(1.1);
+}

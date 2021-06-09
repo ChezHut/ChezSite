@@ -1,0 +1,87 @@
+* {
+    font-family: Arial;
+}
+
+main {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+    background: skyblue;
+    box-shadow: slategrey 10px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .center > .form-wrapper {
+    background: white;
+    padding: 50px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    text-align: center;
+}
+
+main > .center > .form-wrapper > input {
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+    transition: border-bottom 0.25s;
+    margin: auto;
+    width: 300px;
+    color: gray;
+    margin-top: 20px;
+}
+
+main > .center > .form-wrapper > input:focus {
+    border-bottom: 5px solid black;
+}
+
+main > .center > .form-wrapper > button {
+    width: 100%;
+    height: 50px;
+    background: deepskyblue;
+    color: white;
+    font-size: 25px;
+    border: none;
+    box-shadow: slategray 0px 0px 5px;
+    margin-top: 20px;
+    transition: box-shadow 0.5s, transform 0.2s, background 0.2s;
+    outline: none;
+}
+
+main > .center > .form-wrapper > button:hover {
+    box-shadow: slategray 0px 0px 15px;
+    cursor: pointer;
+    background: rgb(3, 151, 201);
+    transform: scale(0.98);
+}
+
+main > .center > .form-wrapper > button:active {
+    transform: scale(1.1);
+}
+
+main > .center > .form-wrapper > button:disabled {
+    background: rgb(76, 134, 153);
+}
+
+main > .center > .form-wrapper > .form-message {
+    color: red;
+    padding: 0px;
+    margin: 0px;
+}
+
+main > .center > .form-wrapper > .checkboxes {
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+}
+
+main > .center > .form-wrapper > .checkbox-section {
+    display: inline
+}
